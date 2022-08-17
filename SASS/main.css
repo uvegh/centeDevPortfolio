@@ -1,0 +1,155 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation {
+  font-size: 20px;
+  padding: 10px;
+  width: calc(100%/2);
+  margin: 15px;
+}
+
+.openner {
+  width: 75%;
+  height: 450px;
+  text-align: center;
+  font-size: 50px;
+  background-image: url("../img/BG-Channel.jpg");
+  z-index: 100;
+  background-size: cover;
+  -webkit-animation: breath 4s ease-out;
+          animation: breath 4s ease-out;
+  background-position: left;
+  color: whitesmoke;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes breath {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.openner a:hover {
+  scale: 1.5;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+}
+
+.holder {
+  overflow: hidden;
+}
+
+.holdermain {
+  background-image: url("../img/download.jpg");
+  height: 100%;
+  margin-top: -50px;
+}
+
+.holdermain button {
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 220px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  -webkit-box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.holdermain button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.holdermain button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 20px;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: blue;
+}
+
+.holdermain button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  color: blue;
+}
+
+.holdermain button:hover:after {
+  opacity: 1;
+  right: 10px;
+  top: 20px;
+}
+
+.bannerAbout {
+  margin-top: -50px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.bannerAbout p {
+  font-size: 2000px;
+}
+
+.bgholder {
+  overflow: hidden;
+}
+
+.slider {
+  width: 60%;
+  height: 100%;
+}
+
+.side {
+  border-right: px solid black;
+  height: 500px;
+  list-style: none;
+  background-color: white;
+  width: 40%;
+}
+/*# sourceMappingURL=main.css.map */

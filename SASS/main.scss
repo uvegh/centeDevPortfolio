@@ -1,0 +1,140 @@
+@import "./main2";
+* {
+    padding: 0;
+    margin: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.openner {
+    width: 75%;
+    height:450px;
+    text-align: center;
+    font-size: 50px;
+    background-image: url("../img/BG-Channel.jpg");
+    z-index: 100;
+    background-size: cover;
+    animation: breath 4s ease-out;
+    background-position: left;
+    color: whitesmoke;
+
+    @keyframes breath {
+        0% {
+            transform: scale(1.2);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
+   
+
+
+    a:hover {
+        scale: 1.5;
+        background-color: transparent;
+        border: 1px solid whitesmoke;
+    }
+}
+
+.holder {
+    overflow: hidden
+}
+
+.holdermain {
+    background-image: url("../img/download.jpg");
+    height: 100%;
+    margin-top: -50px;
+    
+button {
+    border-radius: 4px;
+    
+
+   
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 20px;
+    right: -20px;
+    transition: 0.5s;
+    color: $bluehover;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    color: blue;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+    top: 20px;
+   
+  }
+
+}
+
+.bannerAbout {
+    margin-top: -50px;
+width: 100%;
+justify-content: center;
+    height: 100%;
+
+    p {
+         font-size: 2000px ;
+    
+}
+}
+
+.bgholder {
+    overflow: hidden;
+}
+.slider{width:60%; height: 100%;}
+.side{border-right: px solid black; height: 500px; list-style: none; background-color: white;width:40%;}
+.roll{
+&:hover {
+          background-color: green;
+          padding: $spacing;
+        }
+        &.active {
+          background-color: green;
+          padding: $spacing;
+        }
+    }
+
+
+
+
+

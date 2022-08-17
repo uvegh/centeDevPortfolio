@@ -1,0 +1,373 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+
+<body>
+
+  <div class="header">
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <div class="bugger" id="bugger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+
+        </div>
+
+      </button>
+      <div class="dropdown-content">
+        <a href="/index.html"> Home</a>
+        <a href="#">About us </a>
+        <a href="#"> Contact Us</a>
+      </div>
+    </div>
+    <div class="heading">
+      <p>OFFERING SCHOLARSHIPS TO ANY UNIVERSITY IN CANADA</p>
+      <br>
+      <p> REGISTER AND FIND OUT IF YOU ARE ELIGIBLE FOR A SCHOLARSHIP </p>
+    </div>
+
+  </div>
+
+
+
+  <div class="form">
+    <br> <br> <br> <br>
+
+    <div class="cont">
+      <input type="text" placeholder=" Enter your Firstname" id="firstnametxt">
+      <br> <br>
+      <input type="text" placeholder=" Enter your Lastname" id="lastnametxt">
+
+    </div>
+
+    <div class="valid">
+      <p class="validatebox" id="validateboxFirstname"> </p>
+      <p class="validatebox" id="validateboxSecondname"> </p>
+
+    </div>
+
+    <div class="cont">
+      <input type="tel" placeholder=" Enter your age" id="agetxt" maxlength="3">
+
+      <input type="tel" placeholder=" Enter phone number" id="phonetxt" maxlength="11">
+
+    </div>
+
+
+
+    <div class="valid">
+      <p class="validatebox" id="validateboxage"> </p>
+      <p class="validatebox" id="validateboxphone"> </p>
+    </div>
+
+    <div class="cont">
+      <input type="text" placeholder=" Enter School name" id="schooltxt">
+
+      <select class="Gender" name="" id="genderTxt">
+        <option value=> Gender</option>
+        <option value="1"> Male</option>
+        <option value="2"> Female</option>
+      </select>
+    </div>
+
+    <div class="valid">
+      <p class="validatebox" id="validateboxschool"> </p>
+      <p class="validatebox" id="validateboxGender"></p>
+    </div>
+
+    <div class="contcountry">
+      <select id="countrytxt" class="country">
+
+        <option value=> Select Country</option>
+        <!-- africa -->
+        <option value="1"> Nigeria</option>
+        <option value="1">Ghana </option>
+        <option value="1">South Africa </option>
+        <option value="1">Zimbabwe </option>
+        <option value="1">Benin </option>
+        <option value="1"> Cameroon</option>
+        <option value="1">Congo </option>
+        <option value="1">Guinea </option>
+        <option value="1">Kenya </option>
+        <option value="1">Liberia </option>
+        <option value="1">Madagascar </option>
+        <option value="1">Ethopia </option>
+        <option value="1">Gambia </option>
+        <option value="1">Mali </option>
+        <option value="1">Morocco </option>
+        <option value="1">Mauritus </option>
+        <option value="1">Rwanda </option>
+        <option value="1">Sao </option>
+        <option value="1">Somalia </option>
+        <!-- asia -->
+        <option value="2">Afghanistan </option>
+        <option value="2">China </option>
+        <option value="2">India </option>
+        <option value="2">Korea </option>
+        <option value="2">Israel </option>
+        <option value="2">Iran </option>
+
+        <!-- South America -->
+        <option value="3">Argentina </option>
+        <option value="3">Brazil </option>
+        <option value="3">Peru </option>
+        <option value="3">UruguaY </option>
+
+
+        <!-- north america -->
+        <option value="4">United State of America </option>
+
+        <option value="4">Anguilla </option>
+        <option value="4">Canada </option>
+        <option value="4">Costa Rica </option>
+        <option value="4">Dominica </option>
+        <option value="4">Grenada </option>
+
+        <!-- europe -->
+        <option value="5">Albania </option>
+        <option value="5">Austria </option>
+        <option value="5">Belgium </option>
+        <option value="5">Germany </option>
+        <option value="5">Finland </option>
+        <option value="5">Greece </option>
+
+
+
+
+
+
+        <!-- ocenia -->
+        <option value="5">America Samoa </option>
+        <option value="5">Baker Island </option>
+        <option value="5">Fiji </option>
+        <option value="5">Guam </option>
+        <!-- Antarctica -->
+        <option value="5">Bouvet Island </option>
+        <option value="5">French Southern Territories </option>
+        <option value="5">Heard Island </option>
+        <option value="5">South Georgia </option>
+
+      </select>
+      <p class="validatebox" id="validateboxCountry"> </p>
+    </div>
+    <br>
+
+
+    <br>
+    <div class="cont2">
+      <div class="inside">
+
+        <select name="" id="mathstxt">
+          <option value=""> Compulsory subject</option>
+          <option value="1"> Mathematics</option>
+        </select>
+
+        <input type="tel" class="score" placeholder=" Enter score" id="scoremaths" maxlength="3">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <select name="" id="englishtxt">
+          <option value=""> Compulsory subject</option>
+          <option value="1"> English</option>
+        </select>
+        <input type="tel" class="score" placeholder=" Enter score" id="scoreEnglish" maxlength="3">
+
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+      </div>
+    </div>
+     
+    <div class="validate">
+      <p class="validatebox" id="validateboxmaths"> </p>
+      <p class="validatebox" id="validateboxEnglish"> </p>
+
+     
+
+    </div>
+    <br>
+
+    <div class="cont2">
+
+<div class="inside">
+
+      <select id="pl1" onchange="check();">
+        <option value="">Choose subject</option>
+        <option value="1">Geography</option>
+        <option value="2">Chemistry</option>
+        <option value="3">Physics</option>
+        <option value="4">Biology</option>
+        <option value="5">ComputerScience</option>
+        <option value="6">History</option>
+      </select>
+      <input type="tel" class="score" placeholder=" Enter score" id="scoretxt1" maxlength="3">
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="pl2" onchange="check();">
+        <option value="">Choose subject</option>
+        <option value="1">Geography</option>
+        <option value="2">Chemistry</option>
+        <option value="3">Physics</option>
+        <option value="4">Biology</option>
+        <option value="5">ComputerScience</option>
+        <option value="6">History</option>
+      </select>
+      <input type="tel" class="score" placeholder=" Enter score" id="scoretxt2" maxlength="3">
+      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+
+
+
+
+
+  <div class="validate">
+   
+    
+    <p class="validatebox" id="validatebox1"> </p>
+    <p class="validatebox" id="validatebox2"></p>
+
+  </div>
+
+    <br>
+
+  <div class="cont2">
+
+    <div class="inside">
+    
+          <select id="pl3" onchange="check();">
+            <option value="">Choose subject</option>
+            <option value="1">Geography</option>
+            <option value="2">Chemistry</option>
+            <option value="3">Physics</option>
+            <option value="4">Biology</option>
+            <option value="5">ComputerScience</option>
+            <option value="6">History</option>
+          </select>
+          <input type="tel" class="score" placeholder=" Enter score" id="scoretxt3" maxlength="3">
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select id="pl4" onchange="check();">
+            <option value="">Choose subject</option>
+            <option value="1">Geography</option>
+            <option value="2">Chemistry</option>
+            <option value="3">Physics</option>
+            <option value="4">Biology</option>
+            <option value="5">ComputerScience</option>
+            <option value="6">History</option>
+          </select>
+          <input type="tel" class="score" placeholder=" Enter score" id="scoretxt4" maxlength="3">
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    
+    <div class="validate">
+    
+        <p class="validatebox" id="validatebox3"> </p>
+        <p class="validatebox" id="validatebox4"> </p>
+    
+      </div>
+
+
+
+      <br>
+
+      <div class="cont2">
+
+        <div class="inside">
+        
+              <select id="pl5" onchange="check();">
+                <option value="">Choose subject</option>
+                <option value="1">Geography</option>
+                <option value="2">Chemistry</option>
+                <option value="3">Physics</option>
+                <option value="4">Biology</option>
+                <option value="5">ComputerScience</option>
+                <option value="6">History</option>
+              </select>
+              <input type="tel" class="score" placeholder=" Enter score" id="scoretxt5" maxlength="3">
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select id="pl6" onchange="check();">
+                <option value="">Choose subject</option>
+                <option value="1">Geography</option>
+                <option value="2">Chemistry</option>
+                <option value="3">Physics</option>
+                <option value="4">Biology</option>
+                <option value="5">ComputerScience</option>
+                <option value="6">History</option>
+              </select>
+              <input type="tel" class="score" placeholder=" Enter score" id="scoretxt6" maxlength="3">
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        
+        <div class="validate">
+        
+            <p class="validatebox" id="validatebox5"> </p>
+            <p class="validatebox" id="validatebox6"> </p>
+        
+          </div>
+
+          <br>
+
+    <button id="btnValidate" class="btnValidate">SUBMIT</button>
+
+    
+<div class="box">
+
+  <div class="chart">
+    <div class="piechart">
+      <p class="move"> OUR ANALYSIS</p>
+
+      <canvas id="myChart" class="pie" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+  </div>
+ 
+      <div class="p3" id="tp">
+       
+        <p class="move"> </p>
+        <p class="par" id="tp"></p>
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+
+  <script>
+
+    function check() {
+      d = document;
+      myArray = [];
+      for (h = 0; h < 6; h++) {
+        myArray[h] = d.getElementById('pl' + (h + 1)).value;
+      }
+      for (a = 0; a < 6; a++) {
+        for (b = 1; b < 7; b++) {
+          d.getElementById('pl' + (a + 1)).options[b].style.display = "block";
+          for (c = 0; c < 6; c++) {
+            if (d.getElementById('pl' + (a + 1)).options[b].value == myArray[c]) {
+              d.getElementById('pl' + (a + 1)).options[b].style.display = "none";
+            }
+          }
+        }
+      }
+    }
+</script>
+<!-- <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script> -->
+<script src="Chart.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

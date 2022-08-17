@@ -1,0 +1,156 @@
+*{margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+/* form */
+.form{  text-align: center; width: 100%; height: 1200px; 
+   background-image: url("../img/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"); background-size: cover; background-repeat: no-repeat;display: block;text-align: center; justify-content: center; }
+   .form .cont{width: 100%; display: flex; text-align: center; justify-content: center;  }
+   .form .cont .block{display: block; width: 50%;  }
+   .form .cont2{display: flex; margin: auto;justify-content: center; }
+   .valid{ width: 100%; display: flex; text-align: center; justify-content: center;}
+   .valid p{padding: 20px ;}
+.form input{ width: 20%; height: 30px; padding: 20px; text-transform: uppercase;font-family: sans-serif;  }
+input[type="text"]{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.validate{display: flex; margin: auto;justify-content: space-between; width: 30%;}
+.form select{padding: 10px; font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.form button{ padding: 10px;}
+.form .country{width: 28%;}
+.form .btnValidate{margin-right: 10px;}
+.form .Gender{width: 20%;}
+.show {display:block;}
+/* header */
+.header{text-align: center;font-size: 15px; font-weight: 800; height: 70px; position: fixed; width: 100%; z-index: 100; font-family: sans-serif; color: white;  background-image: url("../img/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"); display: flex; text-align: center;}
+.header .heading{ margin: auto;}
+ 
+.header .bugger{ width: 60%;  margin: 20px; }
+.bugger .line{width: 90%; height: 7px; margin: 5px; border-radius: 40px; background-color: white;}
+/* box */
+.box{display: grid; grid-template-columns:  1fr 1fr;  width: 100%; padding-top: 50px;}
+
+
+.box .p3{  background-color: rgb(78, 75, 75); width: 98%; color: blanchedalmond;font-weight: 800; height: 300px;  text-align: center;border-radius: 20px;padding-top: 100px;}
+.box .par{margin: auto; padding-top: 100px;padding-top: 100px;}
+.form .score{width: 13%;}
+.validatebox{color: red;}
+.dropdown{  background-size: cover; background-repeat: repeat;}
+.dropbtn { 
+
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content p {
+    color: black;
+    padding: 1px 1px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content p:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  
+  .chart{width: 100%; background-color: whitesmoke; border-radius: 20px; font-weight: 800; color: white; text-align: center;color: black;} 
+  .chart .piechart{margin: auto; padding-left: 100px;}
+  .chart .piechart{margin: auto;}
+  
+  @media (max-width:768px) {
+    .header{font-size: 10px;}
+    .form input{ margin: auto; width: 40%; height: 30px; padding: 20px;}
+    .form .score{width: 30%;}
+    .form .country select{z-index: 100;  }
+    .box{display: block; text-align: center; }
+    .box .p1{height: 30px; text-align: center;width: 70%; margin: auto; margin-bottom: 50px;}
+    .box .p2{height: 50px; width: 70%; margin: auto;  margin-bottom: 50px;}
+    .box .p3{height: 40px;  width: 70%; margin: auto;}
+    .box .p1 .move{margin: auto; padding-bottom: 100px; }
+    .chart{height: 400px; text-align: center;width: 95%;  margin-top: 50px; border-radius: 100px;}
+    
+  
+  }
+  @media (max-width:425px) {
+    .form input{ margin: auto; width: 70%; height: 30px; padding: 20px;}
+    .form .score{width: 30%;}
+    .form .score{width: 30%;}
+    .form .country select{z-index: 100; }
+    .box{display: block; text-align: center; }
+    .box .p1{height: 30px; text-align: center;width: 70%; margin: auto; margin-bottom: 50px;}
+    .box .p2{height: 50px; width: 70%; margin: auto;  margin-bottom: 50px;}
+    .box .p3{height: 80px;  width: 70%; margin: auto;}
+    .box .p1 .move{margin: auto; padding-bottom: 100px;}
+    .chart{height: 200px; text-align: center;width: 95%;  margin-top: 50px; border-radius: 20px; margin-left: 0px; text-justify: auto;}
+.bugger{width: 20%;}
+      .box .p3{font-size: 15px;}
+     .chart .piechart{width: 90%; padding-left: 2px;}
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+
+  background-image: url("../img/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
+  color: white;
+  padding: 1px;
+  font-size: 16px;
+  border: none;
+  z-index: 100;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #202020;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

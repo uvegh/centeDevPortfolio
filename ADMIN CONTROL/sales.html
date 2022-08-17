@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN CONTROL</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+        <div class="wrapper">
+
+        
+        
+                <div id="popup-form" class="overlay">
+                    <div class="popup">
+                        <h2>ADD PROFILE</h2>
+                        <a class="close" href="#out">&times;</a>
+                        <div class="form-popup">
+                            <form action="">
+                                <div class="form-container">
+                                    PRODUCT NAME <br>
+                                    <input type="text" name="productName" id="productName" class="productName" >
+                                     <br><p class="validate"id="validateProductName"></p>
+                                  
+                                     DATE OF DELIVERY <br>
+                    
+                                    <input type="date"name="date" id="date" class="date"> <br><p class="validate" id="validateDeliveryDate"></p>
+                                    PRICE <br>
+                                    
+                                    <input type="text"name="" id="price" class="price"> <br> <p class="validate" id="validatePrice"></p>
+                                   
+                                    PRICE OF DELIVERY <br>
+                                    <input type="text"name="deliveryPrice" id="deliveryPrice" class="deliveryPrice"> <br><p class="validate" id="validateDeliveryPrice"></p>
+
+DATE OF ORDER<br>
+                                    <input type="date"name="DeliveryDate" id="DeliveryDate" class="DeliveryDate"> <br><p class="validate" id="validateDateOfOrder"></p>
+                                   
+                                
+                                </div>
+<br> <br>
+                                <div class="buttonContainer">
+                                    <div class="buttons"> 
+                                        <input class="add" type="button" name="submit" value="ADD" id="SalesaddButton">
+                                        &nbsp;  &nbsp;
+                                        <input class="reset" type="reset" name="reset" value="RESET FORM" id="SalesresetButton">
+                                        &nbsp;  &nbsp;
+                                        <input class="update" type="button" name="update" value="UPDATE" id="SalesupdateButton">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+<div class="maincontainer">
+<div class="fixedTable"> <br> <br>
+    <a href="index.html">DASHBOARD</a> <br> <br> <br> 
+    <i class="fa fa-user-circle" aria-hidden="true" style="font-size: 30px;" ></i><a href="users.html">USERS</a> <br> <br> <br>
+    
+    <a href="products.html">PRODUCTS</a> <br> <br> <br>
+    <a href="sales.html">SALES&ORDERS</a> <br> <br> <br>
+    
+</div>
+
+
+
+    <a href="#popup-form" class="add-button">
+    <button style="padding: 10px
+    ; color: blue;">&#10011;</button>
+       AddSale 
+        
+    </a>
+   <div class="salesListtxt" id="salesListtxt">
+    <table>
+        <thead>
+           <tr>
+               <th>PRODUCTNAME</th>
+               <th>DATEOFDELIVERY</th>
+               <th>PRICE</th>
+               <th>PRICEOFDELIVERY</th>
+               <th>DATEOFORDER</th>
+               
+               <th>ACTIONS</th>
+           </tr>
+        </thead>
+        <tbody id="tbody" >
+            
+            
+        </tbody>
+    </table>
+   </div> 
+
+</div>
+    </div>
+
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

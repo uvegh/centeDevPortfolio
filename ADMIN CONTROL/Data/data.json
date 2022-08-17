@@ -1,0 +1,72 @@
+[
+    {
+        "image": "http://206.189.124.254:9000/uploads/969img37.jpeg",
+        "_id": "5f7c15e7e9a0f010733cfa98",
+        "name": "Polo shirt",
+        "category": "Top Offers On",
+        "price": 100,
+        "quantity": 2,
+        "description": "Nice polo shirt",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/305img38.jpeg",
+        "_id": "5f7c1622e9a0f010733cfa99",
+        "name": "Waving sewing machine",
+        "category": "Top Offers On",
+        "price": 100,
+        "quantity": 2,
+        "description": "Green waving machine",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/587img39.jpeg",
+        "_id": "5f7c1662e9a0f010733cfa9a",
+        "name": "Electric boiling Jug",
+        "category": "Top Offers On",
+        "price": 100,
+        "quantity": 2,
+        "description": "Big electric boiling Jug",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/102img40.jpeg",
+        "_id": "5f7c16a2e9a0f010733cfa9b",
+        "name": "White grinder",
+        "category": "Top Offers On",
+        "price": 150,
+        "quantity": 2,
+        "description": "Nice grinder",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/207img41.jpeg",
+        "_id": "5f7c1717e9a0f010733cfa9d",
+        "name": "Black lamp",
+        "category": "Top Offers On",
+        "price": 150,
+        "quantity": 3,
+        "description": "Nice looking black lamp",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/102img40.jpeg",
+        "_id": "5f7c16a2e9a0f010733cfa9b",
+        "name": "White grinder",
+        "category": "Top Offers On",
+        "price": 150,
+        "quantity": 2,
+        "description": "Nice grinder",
+        "__v": 0
+    },
+    {
+        "image": "http://206.189.124.254:9000/uploads/207img41.jpeg",
+        "_id": "5f7c1717e9a0f010733cfa9d",
+        "name": "Black lamp",
+        "category": "Top Offers On",
+        "price": 150,
+        "quantity": 3,
+        "description": "Nice looking black lamp",
+        "__v": 0
+    }
+]

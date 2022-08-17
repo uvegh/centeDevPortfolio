@@ -1,0 +1,246 @@
+alert("welcome to my loan app");
+
+var yrIncome = prompt("Enter customer annual Income");
+var acctBalance = prompt("Enter Customer's account balance");
+var loanAmount = prompt("Enter customer's loan amount");
+
+var points = 0;
+var creditHistory = prompt(" How many month(s) of credit history does the customer have ?");
+var lastDepositdate = prompt("How many month(s) ago was the customer's last deposit?");
+var lastLCD = prompt("How many months is the customer's loan repayment period? ");
+var loanRP =prompt("How many months is the loan repayment period?");
+ var acctType = prompt("Enter acct type(Savings or Current)");
+ 
+                     
+ if(parseInt( acctBalance)> parseInt (loanAmount) && parseInt (creditHistory)==6&&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Current" )
+ {
+    console.log( "The customer has a credit score of " + (points +10+10+5+10+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//50
+
+ }//35
+ else if((parseFloat( acctBalance)< parseFloat (loanAmount) || parseFloat( acctBalance)< parseFloat (loanAmount))
+  && (parseFloat (creditHistory)==6||   parseFloat (creditHistory)<6)
+ 
+ 
+ && 
+(parseInt (lastDepositdate)<=1 || parseInt (lastDepositdate)>1)
+  && (parseInt(lastLCD)>6 || parseInt(lastLCD)<6 )
+  && parseInt (loanRP)<6 
+    && acctType =="Current")
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+5+10+5+10) +" points and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+
+ }
+
+
+
+
+ 
+
+
+
+else  if((parseFloat( acctBalance)< parseFloat (loanAmount) || parseFloat( acctBalance)< parseFloat (loanAmount))
+
+&&
+ (parseFloat (creditHistory)==6|| parseFloat (creditHistory)<6)
+  &&  parseInt (lastDepositdate)>1
+  &&    parseInt(lastLCD)>6 
+   && parseInt (loanRP)<6 
+    && acctType =="Current")
+ {
+    console.log( "The customer has a credit score of " + (points +10+10+5+0+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//40
+ }
+
+ 
+ else if(parseFloat( acctBalance)< parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6   && acctType =="Current")
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+5+10+5+10) +" points and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+
+ }
+
+ else if(parseFloat( acctBalance)< parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt ((lastDepositdate)<=1 ||  parseInt (lastDepositdate)<=1 )&& parseInt(lastLCD)>6 && parseInt (loanRP)<6   && (acctType =="Current" || acctType =="Savings"))
+ {
+    console.log( "The customer has a credit score of " + (points +10+10+0+10+5+5) +" points and is eligible to "+ (0.45* yrIncome)+" Naira" );//40
+
+ }
+
+
+
+
+
+
+
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6  && parseInt (loanRP)<6  && acctType =="Current"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+5+10+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//35
+ }
+ 
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Current"){
+
+    console.log( "The customer has a credit score of " + (points +10+10+0+10+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//45
+
+
+ }
+ 
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)<6 && parseInt (loanRP)<6  && acctType =="Current"){
+
+   console.log( "The customer has a credit score of " + (points +10+10+5+10+0+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//45
+
+
+}
+
+
+else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Savings"){
+
+   console.log( "The customer has a credit score of " + (points +10+10+0+10+5+5) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//40
+
+
+}
+
+else  if(parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)>1 &&    parseInt(lastLCD)>6  && parseInt (loanRP)<6  && acctType =="Current")
+ {
+    console.log( "The customer has a credit score of " + (points +10+10+5+0+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//40
+ }
+
+ 
+else  if(parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6&&  parseInt (lastDepositdate)>1 &&    parseInt(lastLCD)>6  && parseInt (loanRP)<6  && acctType =="Savings")
+{
+   console.log( "The customer has a credit score of " + (points +10+10+5+0+5+5) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//35
+}
+
+ 
+else  if(parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6 &&  (parseInt (lastDepositdate)>1  || parseInt (lastDepositdate)<1) &&    parseInt(lastLCD)>6  && parseInt (loanRP)>6  &&  (acctType =="Savings"  ||  acctType =="Current" )  )
+{
+   console.log( "The customer has a credit score of " + (points +10+10+5+10+0+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//45
+}
+
+
+else  if(parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)==6 &&  parseInt (lastDepositdate)>1 &&    parseInt(lastLCD)>6  && parseInt (loanRP)>6  && acctType =="Savings")
+{
+   console.log( "The customer has a credit score of " + (points +10+10+5+10+0+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//40
+}
+
+else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6  && parseInt (loanRP)<6  && acctType =="Current"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+0+10+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//35
+ }
+
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6  && parseInt (loanRP)<6  && acctType =="Savings"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+0+10+5+5) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+ }
+
+
+
+
+
+ 
+ else if (parseFloat( acctBalance)< parseFloat (loanAmount) && parseFloat (creditHistory)==6 &&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)<6  && parseInt (loanRP)<6  && acctType =="Current"){
+
+
+   console.log( "The customer has a credit score of " + (points -10+10+5+10+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+}
+ 
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)<6  && parseInt (loanRP)<6  && acctType =="Current"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+5+0+5+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+ }
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6  && parseInt (loanRP)>6  && acctType =="Current"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+5+10+0+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//35
+ }
+ 
+ else if (parseFloat( acctBalance)> parseFloat (loanAmount) && parseFloat (creditHistory)<6 &&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)>6  && parseInt (loanRP)>6  && acctType =="Savings"){
+
+
+    console.log( "The customer has a credit score of " + (points +10+0+5+10+0+10) +" and is eligible to "+ (0.45* yrIncome)+" Naira" );//30
+ }
+
+
+//end of eligble
+
+
+
+// Start of not eligible
+else if
+(parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)<6 && parseInt (loanRP)>6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+0+0+0+0+0+5) +" and is not eligible to any loan")
+//-5
+ }
+
+ else if
+(parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)==6&&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)<6 && parseInt (loanRP)>6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+0+0+0+0+5) +" and is not eligible to any loan")
+
+ }//15
+
+ else if
+(parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)==6&&  parseInt (lastDepositdate)<=1 && parseInt(lastLCD)<6 && parseInt (loanRP)>6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+5+0+0+0+0) +" and is not eligible to any loan");//20
+
+ }
+else if
+ (parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6 && parseInt (loanRP)>6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+5+10+0+0+5) +" and is not eligible to any loan");//20
+
+ }
+ else if
+ (parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+0+10+0+5+5) +" and is not eligible to any loan");//20
+
+ }
+ 
+ else if
+ (parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+0+10+0+5+5) +" and is not eligible to any loan");//20
+
+ }
+
+ else if
+ (parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && acctType =="Current" )
+ {
+    console.log( "The customer has a credit score of " + (points -10+10+0+10+0+5+10) +" and is not eligible to any loan");//25
+
+ }
+
+ 
+ else if
+ (parseInt( acctBalance)> parseInt (loanAmount) && parseInt (creditHistory)>6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)<6 && parseInt (loanRP)<6  && acctType =="Current" )
+ {
+    console.log( "The customer has a credit score of " + (points +10+0+0+0+0+5+10) +" and is not eligible to any loan");//25
+
+ }
+
+ 
+ else if
+ (parseInt( acctBalance)> parseInt (loanAmount) && parseInt (creditHistory)>6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)<6 && parseInt (loanRP)<6  && acctType =="Current" )
+ {
+    console.log( "The customer has a credit score of " + (points +10+0+0+0+0+5+10) +" and is not eligible to any loan");//25
+
+ }
+
+ else if
+ (parseInt( acctBalance)> parseInt (loanAmount) && parseInt (creditHistory)>6 &&  parseInt (lastDepositdate)>1 && parseInt(lastLCD)<6 && parseInt (loanRP)<6  && acctType =="Savings" )
+ {
+    console.log( "The customer has a credit score of " + (points +10+0+0+0+0+5+5) +" and is not eligible to any loan");//20
+
+ }
+
+
+ 
+ else 
+ (parseInt( acctBalance)< parseInt (loanAmount) && parseInt (creditHistory)<6 &&  parseInt (lastDepositdate)<1 && parseInt(lastLCD)>6 && parseInt (loanRP)<6  && (acctType =="Savings"  ||  acctType =="Current" )  )
+ {
+    console.log( "The customer  is not eligible to any loan due to low credit points below 30");//none
+
+ }

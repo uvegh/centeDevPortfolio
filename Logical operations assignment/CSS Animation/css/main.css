@@ -1,0 +1,109 @@
+/* 2d and 3d transforms */
+.box1{
+    margin: 30px;
+    width: 200px;
+    height: 120px;
+    background-color: aqua;
+    margin: auto;
+}
+
+.box1:hover {
+  /* transform: translate(0px, 100px); move to different position
+  -ms-transform: translate(0px, 100px); -ms- is building for IE 9 below */
+  /* transform: rotate(180deg);   */
+  /* transform: rotate(-90deg); counter-clockwise */
+  /* transform:scale(0.2, 0.5); shrink size */
+  /* transform:scale(2, 3); enlarge size */
+  /* transform: scaleX(2); scale width */
+  /* transform: scaley(2); scale height */
+  /* transform: rotate(90deg) scale(0.2, 0.5); mergin properties */
+  /* transform: skew(20deg,0deg); */
+  /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); */
+
+  /* 3D section */
+  /* transform: rotateY(150deg); 3D*/
+  /* transform: rotateX(150deg); 3D*/
+}
+/* 2d and 3d tranforms end*/
+
+/* transition */
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    margin: auto;
+    transition: width 2s, height 2s,background-color 2s, transform 2s ;
+    /* transition-timing-function: linear;
+    transition-delay: 3s; */
+}
+.box2:hover{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(360deg);
+}
+/* transition end */
+
+ /* Animation keyframes */
+ .box3{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    /* animation-name: changeBackgrounds; */
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    position: relative;
+ }
+ .overLay{
+     width: 100%;
+     height: 100%;
+     position: fixed;
+ }
+
+ /* @keyframes changeBackground{
+     from{background-color: black;}
+     to{background-color: greenyellow; color: blue; font-size: 30px;}
+ } */
+/* multiple animations in one duration */
+ @keyframes changeBackgrounds{
+   0%{background-color: aqua; color: blue; font-size: 30px; left: 0px; top: 0px;}
+   25%{background-color: red;color: white; font-size: 10px; left:400px; top:0px;}
+   50%{background-color: greenyellow;color: orange; font-size: 40px; left:400px; top:200px;}
+   75%  {background-color:green; left:0px; top:200px;}
+   100%{background-color: blue; color: white; font-size: 15px;left:0px; top:200px;}
+}
+ 
+  /* Animation keyframes end */
+
+
+
+
+
+  /* GRID TEMPLATE COLUMNS AND RESPONSIVE */
+  .boxes{
+      display: grid;
+      grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+     
+  }
+  .boxes .item{
+      background-color: aqua;
+      border-right: 1px solid white;
+      overflow: hidden;
+      
+  }
+  .boxes .item .box{
+      width: 100%;
+      height: 200px;
+      background-color: black;
+      transition:all 2s;
+  }
+
+.box:hover{
+    transform: translateX(40px) ;
+    
+}
+/* GRID TEMPLATE COLUMNS AND RESPONSIVE END */
+

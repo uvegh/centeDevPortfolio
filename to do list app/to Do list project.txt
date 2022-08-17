@@ -1,0 +1,6 @@
+to do list application
+once you click the buttin its supposed to display a text area
+Create input box, 
+TITLE OF WHAT YOU WANT TO DO
+DESCRIPTION
+DATE

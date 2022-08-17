@@ -1,0 +1,59 @@
+[
+    {
+        "_id": "60781e67d397e419a54647ba",
+        "name": "Sammy James",
+        "phone": 9055644353,
+        "email": "tycaann22@gmail.com",
+        "password": "1234",
+        "__v": 0
+    },
+    {
+        "_id": "6078233cd397e419a54647cd",
+        "name": "Christian Cyril",
+        "email": "alexis4real@yahoo.com",
+        "phone": 9087654333,
+        "password": "mnbvcxz",
+        "__v": 0
+    },
+    {
+        "_id": "60782411d397e419a54647d1",
+        "name": "Try Now",
+        "phone": 90,
+        "email": "tycaann22@gmail.comm",
+        "password": "1234",
+        "__v": 0
+    },
+    {
+        "_id": "60850ceed397e419a5464803",
+        "name": "Nnaemeka Mordi",
+        "phone": 8094788986,
+        "email": "mordi@proceptnigeria.com",
+        "password": "mama",
+        "__v": 0
+    },
+    {
+        "_id": "608c2d93d397e419a5464832",
+        "name": "Lexi christian",
+        "email": "patriciaugwu@gmail.com",
+        "phone": 9087654323,
+        "password": "0987654321",
+        "__v": 0
+    },
+  
+    {
+        "_id": "60782411d397e419a54647d1",
+        "name": "Try Now",
+        "phone": 90,
+        "email": "tycaann22@gmail.comm",
+        "password": "1234",
+        "__v": 0
+    },
+    {
+        "_id": "6113b8ef6a35892a461c89f3",
+        "name": "vincent",
+        "phone": 8124367509,
+        "email": "uveghobamien@gmail.com",
+        "password": "spiff",
+        "__v": 0
+    }
+]

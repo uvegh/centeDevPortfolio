@@ -1,0 +1,97 @@
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo app</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/skippr.css">
+</head>
+<body>
+
+
+    <div id="container">
+        <div id="theTarget">
+            <div style="background-image: url(img/blogimg1.png)"></div>
+            <div style="background-image: url(img/blogimg2.png)"></div>
+            <div style="background-image: url(img/blogimg3.png)"></div>
+            <div style="background-image: url(img/blogimg4.png)"></div>
+        </div>    
+    </div>
+
+    <br>
+    <div class="phonespace">
+        
+        <div id="popup-form" class="overlay">
+            
+            <div class="showdes" id="inputArea"> 
+                <a class="close" href="#out">&times;</a><br>
+            <b> Create Item</b>
+            <br> 
+            <input type="text" class="text" id="text"> <br>
+            <p id="validatetext" class="validate"></p>
+          <br>
+            <textarea name="" id="descriptiontxt" class="description" placeholder="description" cols="20" rows="8"></textarea> <br> 
+            <p id="validatetextarea" class="validate"></p>
+           
+             <div class="options">
+                 <a href="#" class="save" id="saveBtn" > Save</a>
+                 <a href="#" class="delete" id="Remove" > Delete</a>
+             
+             </div>
+            </div>
+            </div>
+
+        <a href="#popup-form" class="add-button" id="plusbtn">
+            <div>
+            <p>&#10011;</p>
+            </div>
+        </a> 
+        <br> <br> <br>
+<i><h3>Good morning <br> cente</h3></i>
+<br> <br> 
+<div class="dateSpace" id="dateSpacetxt">
+    <img src="img/calendar.png" width="20" height="20" alt="" srcset="">
+ <b><p class="dateandTask" id="dateandTask"> </p></b>
+
+
+
+   
+</div>
+<br>
+<br>
+
+<div class="tasks"> <br>
+    <p>Total Task available <br>
+    <h3 id="tasksNo" class="tasksNo">0</h3>
+    <br> <br>
+    </p>
+</div>
+<br> <br>
+
+<br>
+<br>
+<p class="items">Items & Description</p>
+<div class="gridTasks" id="gridTasks">
+ 
+</div>
+<br>
+
+
+<div class="end">
+ 
+  <a href="#"> <img src="img/app.png" alt="" width="25" height="25"> </a>
+  <a href="#">  <img src="img/circle-outline-of-small-size.png" alt=""width="25" height="25"> </a>
+  <a href="#">  <img src="img/return.png" alt=""width="25" height="25"> </a>
+
+</div>
+
+    </div>
+ <br>  
+ <script src="JS/jquery-3.6.0.min.js"></script>
+ <script src="JS/skippr.min.js"></script>
+    <script src="JS/main.js"></script>
+   
+</body>
+</html>

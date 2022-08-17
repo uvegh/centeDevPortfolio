@@ -1,0 +1,31 @@
+
+<table>
+    <thead>
+
+        <tr>
+<th>
+    <p id="itembox"> Item</p>
+</th>
+<th>
+    <p id="amountbox">Amount</p>
+</th>
+<th>
+    <p id="date">Date</p>
+</th>
+
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <p id="tableitem"></p>
+    </tr>
+    <tr>
+        <p id="tableitem"></p>
+    </tr>
+    <tr>
+        <p id="tableitem"></p>
+    </tr>
+    <button id="btnExpensesValidate">Add</button>
+</tbody>
+
+</table>

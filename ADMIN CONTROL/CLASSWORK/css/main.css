@@ -1,0 +1,40 @@
+form {
+  width: 40%;
+  border: 1px solid whitesmoke;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 10px 8px;
+  margin: auto;
+  color: black;
+  border-radius: 6px;
+  padding-left: 80px;
+}
+form input {
+  display: block;
+  margin: 10px;
+  padding: 6px;
+  width: 300px;
+}
+.btn{
+  width: 300px;
+  padding: 10px;
+}
+table {
+  width: 65%;
+  margin: auto;
+  padding: 30px;
+}
+thead {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+th {
+  padding: 10px;
+  font-size: 15px;
+}
+td {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #eaeaea;
+}

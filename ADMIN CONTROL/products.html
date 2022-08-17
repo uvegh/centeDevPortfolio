@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN CONTROL</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+
+
+        <div id="popup-form" class="overlay">
+            <div class="popup">
+                <h2>ADD NEW PRODUCT</h2>
+                <a class="close" href="#out">&times;</a>
+                <div class="form-popup">
+                    <form action="http://206.189.124.254:9000/create/product" method="post" enctype="multipart/form-data" >
+                        <div class="form-container">
+
+                            PRODUCTNAME <br>
+
+                            <input type="text" name="name" id="PRODUCTNAME" class="PRODUCTNAME">
+                            <br>
+                            <p class="validate" id="validatePRODUCTNAME"></p>
+                            CATEGORY <br>
+                            <input type="text" name="category" id="category" class="category">
+                            <br>
+                            <p class="validate" id="validatecategory"></p>
+                            PRODUCTPRICE<br>
+                            <input type="text" name="price" id="PRODUCTPRICE" class="PRODUCTPRICE">
+                            <br>
+                            <p class="validate" id="validatePRODUCTPRICE"></p>
+
+                            QUANTITY <br>
+                            <input type="number" name="quantity" id="QUANTITY" class="QUANTITY">
+                            <br>
+                            <p class="validate" id="validateQUANTITY"></p>
+
+                            IMAGE <br>
+                            <input type="file" name="image"  id="IMAGE" class="IMAGE">
+                            <br>
+                            <p class="validate" id="validateIMAGE"></p>
+                            DESCRIPTION <br>
+                            <input type="text" name="description" id="DESCRIPTION" class="DESCRIPTION">
+                            <br>
+                            <p class="validate" id="validateDESCRIPTION"></p>
+                            
+                           
+
+
+                        </div>
+
+
+                        <div class="buttonContainer">
+                            <div class="buttons">
+                       <button class="add"type="submit"  id="ProductaddButton">ADD</button> <br>
+                                
+                                <button  class="reset" type="reset" 
+                                    id="productresetButton">RESET</button> <br>
+                                
+                                <button class="update" type="button" name="update" value="UPDATE"
+                                    id="productupdateButton">UPDATE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="fixedTable"> <br> <br>
+                <img src="img/bars-solid.svg" height="30" width="35"><a href="index.html" class="active">DASHBOARD</a> <br> <br> <br> 
+      <img src="img/programmer.png" alt="" height="30" width="35"> <a href="users.html">USERS</a> <br> <br> <br>
+      <img src="img/open-box.png" width="45"height="35" alt="" srcset=""> <a href="products.html">PRODUCTS</a> <br> <br> <br>
+   <img src="img/shopping-cart.png" width="45"height="35" alt="" srcset="">  <a href="sales.html">SALES </a> <br> <br> <br>
+
+            </div>
+            
+
+            <div class="contain">
+                <div class="procesing" id="procesing">Loading...</div>
+                <div class="search-container">
+                    <form action="">
+                      <input type="text" placeholder="Search..." name="search" >
+                      
+                    </form>
+                  </div>
+                <br>
+                <a href="#popup-form" class="add-button">
+                    <button style="padding: 10px; color: blue;background-color: whitesmoke; border-radius: 4px;">AddNewProduct</button>
+                    
+
+                </a> <br> <br>
+                <div class="productsGrid" id="productsGrid">
+                    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="JS/jquery-3.6.0.min.js"></script>
+        <script src="JS/main.js"></script>
+</body>
+
+</html>

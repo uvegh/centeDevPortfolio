@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;}
+.header{background-color: #202020;position: fixed; width: 100%; height: 90px; color: white; font-size: 40px; display: flex; justify-content: space-around;}
+.form{width: 100%; height: 300px; justify-content: space-between; display: flex; }
+.monthbudget{width: 30%; display: block; background-color: whitesmoke; justify-content: center; text-align: center; border-radius :10px 10px 10px 10px ;}
+.chart{width: 40%; display: block; text-align: center;}
+.expensesbox{color: green;font-size: 30px;}
+.Expenses{display: block;width: 30%; background-color: whitesmoke;justify-content: center;text-align: center;border-radius :10px 10px 10px 10px }
+input{width: 70%; height: 12%;}
+button{width: 15%;height: 10%;}
+
+table, td {padding: 10px;
+  }
+  table{text-align: center; background-color: silver; margin-left: 110px; border-top: 1px solid black;}
+  .tab{ text-align: center;justify-content: center;}
+  .validate{color: red;}

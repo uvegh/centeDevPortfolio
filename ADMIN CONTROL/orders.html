@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN CONTROL</title>
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+    
+        <div class="wrapper">
+
+            
+        
+                <div id="popup-form" class="overlay">
+                    <div class="popup">
+                        <h2>ADD PROFILE</h2>
+                        <a class="close" href="#out">&times;</a>
+                        <div class="form-popup">
+                            <form action="">
+                                <div class="form-container">
+                                    PRODUCTNAME <br>
+                                    <input type="text" name="ProductName" id="ProductName" class="ProductName" > 
+                                                                <br><p class="validate"id="validateProductName"></p>
+                                  
+                                                                ProductID <br>
+                    
+                                    <input type="text"name="ProductID" id="ProductID" class="ProductID"> <br><p class="validate" id="validateProductID"></p>
+                                    OrderDate <br>
+                                    
+                                    <input type="text"name="OrderDate" id="OrderDate" class="OrderDate"> <br> <p class="validate" id="validateOrderDate"></p>
+                                   
+                                    DeliveryDate <br>
+                                    <input type="text"name="DeliveryDate" id="DeliveryDate" class="DeliveryDate"> <br><p class="validate" id="validateDeliveryDate"></p>
+                                    
+                                    
+                                    
+
+
+
+
+                                </div>
+<br> <br>
+                                <div class="buttonContainer">
+                                    <div class="buttons"> 
+                                        <input class="add" type="button" name="submit" value="ADD" id="addButton">
+                                        &nbsp;  &nbsp;
+                                        <input class="reset" type="reset" name="reset" value="RESET FORM" id="resetButton">
+                                        &nbsp;  &nbsp;
+                                        <input class="update" type="button" name="update" value="UPDATE" id="updateButton">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+<div class="maincontainer">
+<div class="fixedTable"> <br> <br>
+    <a href="index.html">DASHBOARD</a> <br> <br> <br> 
+    <a href="users.html">USERS</a> <br> <br> <br>
+    <a href="orders.html">ORDERS</a> <br> <br> <br>
+
+    
+    <a href="products.html">PRODUCTS</a> <br> <br> <br>
+    <a href="sales.html">SALES</a> <br> <br> <br>
+</div>
+
+
+<a href="#popup-form" class="add-button">
+
+    AddNewOrder <p class="plus">  &#10011;</p>
+     
+ </a>
+
+   <div class="listofOrders" id="listofOrders">
+
+    <table>
+        <thead>
+           <tr>
+               <th>NAME</th>
+               <th>ORDER DATE</th>
+               <th>DELIVERY DATE</th>
+               <th>DESTINATION</th>
+               <th>ACTIONS</th>
+           </tr>
+        </thead>
+        <tbody id="tbody">
+            
+            
+        </tbody>
+    </table>
+
+   </div>
+ 
+    </div>
+
+</div>
+    </div>
+
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

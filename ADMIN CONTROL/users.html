@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN CONTROL</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- POPUP START -->
+
+
+    <div id="popup-form" class="overlay">
+        <div class="popup">
+            <h2>ADD USER</h2>
+            <a class="close" href="#out">&times;</a>
+            <div class="form-popup">
+                <form action="">
+                    <div class="form-container">
+
+                        Username <br>
+
+                        <input type="text" name="firstname" id="firstname" class="firstname"> <br>
+                        <p class="validate" id="validatefirstname"></p>
+                        Phone Number <br>
+                        <input type="number" name="phoneNo" id="phoneNo" class="phoneNo">
+                        <br>
+                        <p class="validate" id="validateusername"></p>
+                        Email adress <br>
+
+                        <input type="email" name="Email" id="Email" class="Email"> <br>
+                        <p class="validate" id="validateEmail"></p>
+
+
+                        PASSWORD <br>
+                        <input type="password" name="lastname" id="passwordtxt" class="passwordtxt"> <br>
+                        <p class="validate" id="validatelastname"></p>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <br> <br>
+                    <div class="buttonContainer">
+                        <div class="buttons">
+                            <input class="add" type="button" name="submit" value="ADD" id="addButton">
+                            &nbsp; &nbsp;
+                            <input class="reset" type="reset" name="reset" value="RESET FORM" id="resetButton">
+                            &nbsp; &nbsp;
+                            <input class="update" type="button" name="update" value="UPDATE" id="updateButton">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer">
+        <div class="fixedTable"> <br> <br>
+            <img src="img/bars-solid.svg" height="30" width="35"><a href="index.html" class="active">DASHBOARD</a> <br> <br> <br> 
+      <img src="img/programmer.png" alt="" height="30" width="35"> <a href="users.html">USERS</a> <br> <br> <br>
+      <img src="img/open-box.png" width="45"height="35" alt="" srcset=""> <a href="products.html">PRODUCTS</a> <br> <br> <br>
+   <img src="img/shopping-cart.png" width="45"height="35" alt="" srcset="">  <a href="sales.html">SALES </a> <br> <br> <br>
+
+        </div>
+        <div class="contain">
+            <div class="search-container">
+                    <form action="">
+                      <input type="text" placeholder="Search..." name="search" >
+                      
+                    </form>
+                  </div>
+            <div class="procesing" id="procesing">Loading...</div>
+            <br>
+
+            <a href="#popup-form" class="add-button">
+                <button style="padding: 10px; color: blue;"> AddNewUser</button>
+               
+
+            </a>
+<br> <br>
+            <div class="gridTasks" id="gridTasks">
+                <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

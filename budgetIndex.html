@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET APPLICATION</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>Monthly Budget</p>
+        <p> </p>
+        <p>Expenses</p>
+    </div>
+    <br> <br> <br> <br> <br>
+    <div class="form">
+        <div class="monthbudget">
+            Enter month budget <br>
+           
+            <input type="text" id="monthlyBudgettxt" class="monthlyBudget"> <br>
+            <p id="validatemonthlybudget" class="validate">
+               
+            </p> <br> <br>
+            <button id="btnmonthbudgetValidate">Add</button>
+        </div>
+        <div class="chart">
+            <b> Bills & Utilities</b>
+            <br>
+            <p class="expensesbox" id="expensesbox">$0</p> <br>
+            <p id="newexpensesbox"> </p>
+          <canvas id="pie-chart" width="800" height="450"></canvas>
+        </div>
+
+        <div class="Expenses">
+            item: <br>
+            <input type="text" class="Item" id="Itemtxt"> <br>
+            <p id="validateItem" class="validate">
+               
+            </p> <br>
+            Amount: <br>
+            <input type="text" class="Amount" id="Amounttxt"> <br>
+            <p id="validateAmount" class="validate"></p> <br>
+            Date: <br>
+            <input type="date" class="date" id="datetxt"> 
+            <p id="validateDate" class="validate"></p> <br> 
+            
+            
+
+            <button id="btnExpensesValidate"> Add</button>
+<br> <br> <br> <br>
+            <table id="myTable">
+                <tr>
+                  <td>Item</td>
+                  <td>Amount</td>
+                  <td>Date</td>
+                </tr>
+                
+              </table>
+              <br>    
+        <br>
+        </div>
+
+
+    </div>
+
+
+    
+       
+      
+        <script src="Chart.min.js"></script>
+        <script src="JS/budgetApp.js"></script>
+    </body>
+
+</html>
